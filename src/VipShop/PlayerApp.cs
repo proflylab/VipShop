@@ -198,7 +198,7 @@ public sealed class PlayerApp(IVipDb db, Tokens tokens, IOptions<VipOptions> opt
     }
 
     /// <summary>When the bonuses reach the game (TrickMod GameServer module vip).</summary>
-    internal const string GameNote = "In the game: a character that is online gets the bonuses within about a minute (at once " +
+    internal const string GameNote = "In the game: a character that is online gets the bonuses within a few seconds (at once " +
         "after a map change or a new login), with a chat message showing the package and its end time.";
 
     private async Task History(HttpContext ctx)

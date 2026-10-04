@@ -101,7 +101,7 @@ public sealed class AdminApp(IVipDb db, Tokens tokens, IOptions<AdminOptions> ad
         }
         sb.Append("<p class=\"muted small\">Delete removes a package nobody has bought; a package with purchases is disabled instead ")
           .Append("(no longer sold, characters keep it until it ends). Edited bonuses reach characters that already have the package ")
-          .Append("within about a minute.</p></section>");
+          .Append("within a few seconds.</p></section>");
         await PlayerApp.Send(ctx, Page("VipShop Admin", Header(), sb.ToString()));
     }
 
