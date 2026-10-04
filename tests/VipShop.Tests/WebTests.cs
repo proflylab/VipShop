@@ -56,6 +56,7 @@ public class PlayerPageTests
         Assert.Contains("Silver 7 days", html);
         Assert.Contains("Log in to buy", html);
         Assert.Contains("+20%</b> EXP", html);
+        Assert.Contains("+10%</b> Drop rate", html);
     }
 
     [Fact]

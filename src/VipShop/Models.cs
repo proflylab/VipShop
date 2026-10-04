@@ -50,9 +50,9 @@ public sealed record VipPackage
     public int Sort { get; init; }
     public DateTime? UpdateDate { get; init; }
 
-    /// <summary>Column / form / JSON names of <see cref="Main"/>.</summary>
+    /// <summary>Column / form / JSON names of <see cref="Main"/>. find_pct = monster drop rate only (digging is not affected).</summary>
     public static readonly string[] MainColumns = ["exp_pct", "tm_pct", "speed_pct", "find_pct"];
-    public static readonly string[] MainLabels = ["EXP", "TM", "Run speed", "Item find / dig"];
+    public static readonly string[] MainLabels = ["EXP", "TM", "Run speed", "Drop rate"];
 
     /// <summary>The 12 stats in the order of the GM Ability packet; columns are &lt;stat&gt;_pct and &lt;stat&gt;_add.</summary>
     public static readonly string[] Stats = ["AP", "AC", "DX", "MP", "MA", "MD", "WT", "DA", "LK", "HP", "DP", "HV"];
